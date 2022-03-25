@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Employees List</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Age</th>
+  </tr>
+  {% for form in list %}
+  <tr>
+    <td>{{form.user_name}}</td>
+    <td>{{form.email}}</td>
+    <td>{{form.age}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+</body>
+</html>
+
